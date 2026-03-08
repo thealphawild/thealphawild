@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Emirates Airlines — Fly the World</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">Emirates Airlines</a>
+      <nav class="nav">
+        <a href="#destinations">Destinations</a>
+        <a href="#services">Services</a>
+        <a href="#manage">Manage</a>
+        <a class="btn-primary" href="#book">Book</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>Fly the world with comfort and style</h1>
+          <p>Book direct flights to 150+ destinations with award-winning service and global connectivity.</p>
+          <a href="#book" class="btn-cta">Search flights</a>
+        </div>
+
+        <div class="booking-panel" id="book">
+          <form id="bookingForm">
+            <div class="row">
+              <label>
+                From
+                <input type="text" name="from" placeholder="Departure city" required>
+              </label>
+              <label>
+                To
+                <input type="text" name="to" placeholder="Destination city" required>
+              </label>
+            </div>
+            <div class="row">
+              <label>
+                Depart
+                <input type="date" name="depart" required>
+              </label>
+              <label>
+                Return
+                <input type="date" name="return">
+              </label>
+            </div>
+            <div class="row small">
+              <label>
+                Passengers
+                <select name="passengers">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                </select>
+              </label>
+              <label class="flex-end">
+                <button class="btn-primary" type="submit">Search</button>
+              </label>
+            </div>
+          </form>
+          <div id="bookingMessage" class="booking-message" aria-live="polite"></div>
+        </div>
+      </div>
+      <svg class="hero-plane" viewBox="0 0 512 512" aria-hidden="true">
+        <path fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="6" d="M20 260c120-20 200-140 320-140s120 120 200 120"/>
+      </svg>
+    </section>
+
+    <section id="services" class="section container">
+      <h2>Why fly with Emirates Airlines</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Global Network</h3>
+          <p>Seamless connectivity to 150+ destinations across six continents.</p>
+        </div>
+        <div class="card">
+          <h3>Comfort</h3>
+          <p>Spacious cabins, award-winning service and modern amenities onboard.</p>
+        </div>
+        <div class="card">
+          <h3>Flexible fares</h3>
+          <p>Multiple fare options to fit leisure and business travel needs.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="destinations" class="section container">
+      <h2>Popular Destinations</h2>
+      <div class="grid">
+        <div class="tile">London</div>
+        <div class="tile">Dubai</div>
+        <div class="tile">New York</div>
+        <div class="tile">Sydney</div>
+        <div class="tile">Tokyo</div>
+        <div class="tile">Paris</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> Emirates Airlines</div>
+      <div class="footer-links">
+        <a href="#">Help</a>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

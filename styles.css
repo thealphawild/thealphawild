@@ -1,0 +1,56 @@
+:root{
+  --bg:#021124;
+  --accent:#ff5a3c;
+  --muted:rgba(255,255,255,0.8);
+  --card:#062233;
+  --glass:rgba(255,255,255,0.04);
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  color:var(--muted);
+  background:linear-gradient(180deg,#031226 0%, #041a2d 60%);
+  -webkit-font-smoothing:antialiased;
+}
+.container{max-width:1100px;margin:0 auto;padding:1rem}
+.site-header{position:sticky;top:0;background:transparent;padding:.75rem 0}
+.header-inner{display:flex;align-items:center;justify-content:space-between}
+.brand{font-weight:800;color:#fff;text-decoration:none;font-size:1.2rem}
+.nav a{color:var(--muted);text-decoration:none;margin-left:1rem}
+.btn-primary{background:var(--accent);color:#fff;padding:.6rem .9rem;border-radius:8px;text-decoration:none;border:none;cursor:pointer}
+
+.hero{position:relative;padding:4rem 0 6rem;overflow:visible}
+.hero-inner{display:grid;grid-template-columns:1fr 420px;gap:2rem;align-items:center}
+.hero-copy h1{font-size:2.1rem;margin:0 0 .5rem;color:#fff}
+.hero-copy p{margin:0 0 1rem;color:rgba(255,255,255,0.85)}
+.btn-cta{display:inline-block;background:transparent;border:2px solid rgba(255,255,255,0.12);color:#fff;padding:.6rem .9rem;border-radius:8px;text-decoration:none}
+
+.booking-panel{background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));padding:1rem;border-radius:12px;backdrop-filter:blur(6px);box-shadow:0 8px 30px rgba(2,10,20,0.6)}
+.booking-panel form{display:block}
+.row{display:flex;gap:0.75rem;margin-bottom:.75rem}
+.row.small{align-items:end}
+label{flex:1;display:flex;flex-direction:column;font-size:.85rem;color:var(--muted)}
+input,select{margin-top:.35rem;padding:.6rem .6rem;border-radius:8px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:inherit}
+button.btn-primary{width:100%}
+.flex-end{display:flex;align-items:flex-end}
+.booking-message{margin-top:.5rem;font-size:.9rem;color:var(--muted);min-height:1.2rem}
+
+.hero-plane{position:absolute;right:-6%;top:10%;width:40%;height:40%;opacity:0.12}
+
+.section{padding:3rem 0}
+h2{color:#fff;margin:0 0 1rem}
+.cards{display:flex;gap:1rem}
+.card{background:var(--card);padding:1rem;border-radius:10px;flex:1}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:1rem}
+.tile{background:var(--glass);padding:1rem;border-radius:8px;text-align:center}
+
+.site-footer{padding:1.25rem 0;border-top:1px solid rgba(255,255,255,0.04);margin-top:2rem}
+.footer-inner{display:flex;justify-content:space-between;align-items:center}
+.footer-links a{color:var(--muted);margin-left:1rem;text-decoration:none}
+
+@media(max-width:900px){
+  .hero-inner{grid-template-columns:1fr}
+  .hero-plane{display:none}
+}
