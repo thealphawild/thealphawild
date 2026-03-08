@@ -17,7 +17,9 @@ body{
 .container{max-width:1100px;margin:0 auto;padding:1rem}
 .site-header{position:sticky;top:0;background:transparent;padding:.75rem 0}
 .header-inner{display:flex;align-items:center;justify-content:space-between}
-.brand{font-weight:800;color:#fff;text-decoration:none;font-size:1.2rem}
+.brand{display:flex;align-items:center;text-decoration:none}
+.brand-logo{width:36px;height:auto;margin-right:10px}
+.brand-text{font-weight:800;color:#fff;font-size:1.05rem}
 .nav a{color:var(--muted);text-decoration:none;margin-left:1rem}
 .btn-primary{background:var(--accent);color:#fff;padding:.6rem .9rem;border-radius:8px;text-decoration:none;border:none;cursor:pointer}
 
